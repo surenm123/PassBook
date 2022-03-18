@@ -61,7 +61,7 @@ namespace PassBook
             MySqlDataAdapter da = new MySqlDataAdapter(sql, o.con);
             DataTable dt = new DataTable();
             da.Fill(dt);
-            if(dt.Rows.Count ==1)
+            if(dt.Rows.Count == 1)
             {
                 this.Hide();
                 Home frm = new Home(dt.Rows[0][1].ToString());
